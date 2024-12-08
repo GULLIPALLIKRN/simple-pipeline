@@ -8,4 +8,4 @@ WORKDIR /app
 COPY . .
 
 # Default command to run when the container starts
-CMD ["bash", "-c", "echo Hello from Docker! && sleep 3600"]
+CMD ["bash", "-c", "echo 'Listening on port 80' && nc -l -p 80"]
